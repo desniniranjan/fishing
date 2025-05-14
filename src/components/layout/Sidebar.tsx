@@ -1,6 +1,6 @@
 
 import { useNavigate, useLocation } from "react-router-dom";
-import { Home, Users, Calendar, Building, MenuIcon } from "lucide-react";
+import { Home, Users, Calendar, Building, User, MenuIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { 
   Sidebar as SidebarContainer, 
@@ -19,6 +19,7 @@ const navigation = [
   { name: "Dashboard", href: "/", icon: Home },
   { name: "Users", href: "/users", icon: Users },
   { name: "Bookings", href: "/bookings", icon: Calendar },
+  { name: "Guests", href: "/guests", icon: User },
   { name: "Staff", href: "/staff", icon: Users },
 ];
 

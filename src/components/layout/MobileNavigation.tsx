@@ -1,5 +1,5 @@
 
-import { Home, Users, Calendar, Building } from "lucide-react";
+import { Home, Users, Calendar, Building, User } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +12,7 @@ const MobileNavigation = () => {
     { name: "Dashboard", href: "/", icon: Home },
     { name: "Users", href: "/users", icon: Users },
     { name: "Bookings", href: "/bookings", icon: Calendar },
+    { name: "Guests", href: "/guests", icon: User },
     { name: "Staff", href: "/staff", icon: Users },
   ];
 
@@ -23,7 +24,7 @@ const MobileNavigation = () => {
             key={item.name}
             onClick={() => navigate(item.href)}
             className={cn(
-              "mobile-tab w-full",
+              "mobile-tab w-full py-2 flex flex-col items-center justify-center",
               currentPath === item.href ? "active" : ""
             )}
           >
