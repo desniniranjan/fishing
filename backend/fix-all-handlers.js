@@ -1,4 +1,4 @@
-/**
+bhjhjub/**
  * Script to fix all TypeScript validation errors in handler files
  * This script applies common patterns to fix the validation errors
  */
